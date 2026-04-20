@@ -18,7 +18,6 @@
       overflow: hidden;
     }
 
-    /* BOTH PAGES */
     .page {
       height: 100vh;
       width: 100vw;
@@ -30,31 +29,33 @@
       position: absolute;
       top: 0;
       left: 0;
+      padding: 20px;
     }
 
-    /* FIRST PAGE */
+    /* PAGE 1 */
     #page1 {
       background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     }
 
-    /* SECOND PAGE */
+    /* PAGE 2 */
     #page2 {
       background: linear-gradient(135deg, #a18cd1, #fbc2eb);
       display: none;
+      color: white;
     }
 
     img {
       width: 260px;
       max-width: 80%;
       border-radius: 20px;
-      margin-bottom: 20px;
+      margin: 15px 0;
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
 
     h1 {
       font-size: 28px;
       color: #d81b60;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     button {
@@ -82,15 +83,27 @@
       position: absolute;
     }
 
-    #finalText {
+    .finalText {
+      font-size: 24px;
+      margin: 10px 0;
+      animation: fadeIn 1s ease;
+    }
+
+    .mainLove {
       font-size: 32px;
-      color: #ffffff;
+      font-weight: bold;
+      margin-bottom: 15px;
       animation: pop 0.6s ease;
     }
 
     @keyframes pop {
       from { transform: scale(0.5); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
   </style>
@@ -101,7 +114,6 @@
 <!-- 💖 PAGE 1 -->
 <div id="page1" class="page">
 
-  <!-- 👉 ADD YOUR IMAGE -->
   <img src="your-image.jpg" alt="Us ❤️">
 
   <h1>Sanvi are you Thadichi 💖</h1>
@@ -114,7 +126,13 @@
 <!-- ❤️ PAGE 2 -->
 <div id="page2" class="page">
 
-  <h1 id="finalText">i love you shuttumani ❤️</h1>
+  <div class="mainLove">i love you shuttumani ❤️</div>
+
+  <div class="finalText">Ante kuttyne njn mind akkathe alla busy ayi povunne konda 💭</div>
+  <div class="finalText">Ante kutty anik nalla ishta ❤️</div>
+  <div class="finalText">LOVE YOU SANNNN!! 😍🔥</div>
+
+  <img src="your-image.jpg" alt="Love ❤️">
 
 </div>
 
